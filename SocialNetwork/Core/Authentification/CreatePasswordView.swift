@@ -1,5 +1,5 @@
 //
-//  AddEmailView.swift
+//  CreatePasswordView.swift
 //  SocialNetwork
 //
 //  Created by MacBookAir on 23.04.2024.
@@ -7,29 +7,30 @@
 
 import SwiftUI
 
-struct AddEmailView: View {
-    @State private var email = ""
+struct CreatePasswordView: View {
+    @State private var password = ""
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
         VStack {
-            Text("Add your email")
+            Text("Create a password")
                 .font(.title2)
                 .fontWeight(.bold)
                 .padding(.top)
             
-            Text("You'll use this email to sign in to your account")
+            Text("Your password must be at least 6 characters in lenght")
                 .font(.footnote)
                 .foregroundColor(.gray)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 24)
             
-            TextField("Email", text: $email)
+            SecureField("Password", text: $password)
                 .autocapitalization(.none)
                 .modifier(IGTextFieldModifire())
+                .padding(.top)
             
             NavigationLink {
-                CreateUsernameView()
+                CompleteSignUpView()
                     .navigationBarBackButtonHidden()
             } label: {
                 Text("Next")
@@ -56,5 +57,5 @@ struct AddEmailView: View {
     }
 }
 #Preview {
-    AddEmailView()
+    CreatePasswordView()
 }

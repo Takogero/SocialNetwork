@@ -1,5 +1,5 @@
 //
-//  AddEmailView.swift
+//  CreateUsernameView.swift
 //  SocialNetwork
 //
 //  Created by MacBookAir on 23.04.2024.
@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-struct AddEmailView: View {
-    @State private var email = ""
+struct CreateUsernameView: View {
+    @State private var username = ""
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
         VStack {
-            Text("Add your email")
+            Text("Create username")
                 .font(.title2)
                 .fontWeight(.bold)
                 .padding(.top)
@@ -24,12 +24,12 @@ struct AddEmailView: View {
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 24)
             
-            TextField("Email", text: $email)
+            TextField("Email", text: $username)
                 .autocapitalization(.none)
                 .modifier(IGTextFieldModifire())
             
             NavigationLink {
-                CreateUsernameView()
+                CreatePasswordView()
                     .navigationBarBackButtonHidden()
             } label: {
                 Text("Next")
@@ -55,6 +55,7 @@ struct AddEmailView: View {
         }
     }
 }
+
 #Preview {
-    AddEmailView()
+    CreateUsernameView()
 }
