@@ -1,31 +1,27 @@
 //
-//  ProfileView.swift
+//  CurrentUserProfileView.swift
 //  SocialNetwork
 //
-//  Created by MacBookAir on 20.04.2024.
+//  Created by MacBookAir on 23.04.2024.
 //
 
 import SwiftUI
 
-struct ProfileView: View {
-    
-    let user: User
-    
+struct CurrentUserProfileView: View {
     private let gridItems: [GridItem] = [
         .init(.flexible(), spacing: 1),
         .init(.flexible(), spacing: 1),
         .init(.flexible(), spacing: 1)
     ]
-        
     
     var body: some View {
-       
+        NavigationStack {
             ScrollView {
                 //header
                 VStack(spacing: 10) {
                     //pic and stats
                     HStack {
-                        Image(user.profileImageUrl ?? "")
+                        Image("kit.black")
                             .resizable()
                             .scaledToFill()
                             .frame(width: 80, height: 80)
@@ -46,16 +42,12 @@ struct ProfileView: View {
                     
                     //nam and bio
                     VStack(alignment: .leading) {
-                        if let fullname = user.fullname {
-                            Text(fullname)
-                                .font(.footnote)
-                                .fontWeight(.semibold)
-                        }
+                     Text("Chadwic Bozeman")
+                            .font(.footnote)
+                            .fontWeight(.semibold)
                         
-                        if let bio = user.bio {
-                            Text(bio)
-                                .font(.footnote)
-                        }
+                        Text("Wakanda Forever")
+                            .font(.footnote)
                     }
                     .frame(maxWidth: .infinity,alignment: .leading)
                     .padding(.horizontal)
@@ -87,13 +79,20 @@ struct ProfileView: View {
             }
             .navigationTitle("Profile")
             .navigationBarTitleDisplayMode(.inline)
-            
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "line.3.horizontal")
+                            .foregroundColor(.black)
+                    }
+                }
+            }
+        }
     }
 }
 
-
-struct ProfileView_Previews: PreviewProvider {
-    static var previews: some View {
-        ProfileView(user: User.MOCK_USERS[0])
-    }
+#Preview {
+    CurrentUserProfileView()
 }
