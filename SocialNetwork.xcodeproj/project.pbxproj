@@ -22,6 +22,8 @@
 		D07D11682BDBE5B9007F32C1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07D11672BDBE5B9007F32C1 /* Post.swift */; };
 		D07D116A2BDBF16A007F32C1 /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07D11692BDBF16A007F32C1 /* PostGridView.swift */; };
 		D07D116C2BDBF411007F32C1 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07D116B2BDBF411007F32C1 /* ProfileHeaderView.swift */; };
+		D07D116E2BDBF778007F32C1 /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07D116D2BDBF778007F32C1 /* UploadPostView.swift */; };
+		D07D11702BDC0BD6007F32C1 /* UploadPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07D116F2BDC0BD6007F32C1 /* UploadPostViewModel.swift */; };
 		D0FD4E632BD3D1690040DE96 /* SocialNetworkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FD4E622BD3D1690040DE96 /* SocialNetworkApp.swift */; };
 		D0FD4E652BD3D1690040DE96 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FD4E642BD3D1690040DE96 /* ContentView.swift */; };
 		D0FD4E672BD3D16A0040DE96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0FD4E662BD3D16A0040DE96 /* Assets.xcassets */; };
@@ -46,6 +48,8 @@
 		D07D11672BDBE5B9007F32C1 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		D07D11692BDBF16A007F32C1 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
 		D07D116B2BDBF411007F32C1 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		D07D116D2BDBF778007F32C1 /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
+		D07D116F2BDC0BD6007F32C1 /* UploadPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostViewModel.swift; sourceTree = "<group>"; };
 		D0FD4E5F2BD3D1690040DE96 /* SocialNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0FD4E622BD3D1690040DE96 /* SocialNetworkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworkApp.swift; sourceTree = "<group>"; };
 		D0FD4E642BD3D1690040DE96 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -210,6 +214,8 @@
 		D0FD4E7A2BD3D27E0040DE96 /* UploadPost */ = {
 			isa = PBXGroup;
 			children = (
+				D07D116D2BDBF778007F32C1 /* UploadPostView.swift */,
+				D07D116F2BDC0BD6007F32C1 /* UploadPostViewModel.swift */,
 			);
 			path = UploadPost;
 			sourceTree = "<group>";
@@ -293,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D032E3402BD6AF9300C957E3 /* FeedCell.swift in Sources */,
+				D07D116E2BDBF778007F32C1 /* UploadPostView.swift in Sources */,
 				D0FD4E7F2BD3D4BA0040DE96 /* ProfileView.swift in Sources */,
 				D0FD4E652BD3D1690040DE96 /* ContentView.swift in Sources */,
 				D032E3442BD6BC7300C957E3 /* LoginView.swift in Sources */,
@@ -302,6 +309,7 @@
 				D032E3482BD7FD9100C957E3 /* IGTextFieldModifire.swift in Sources */,
 				D07D116A2BDBF16A007F32C1 /* PostGridView.swift in Sources */,
 				D032E34A2BD7FE7F00C957E3 /* CreateUsernameView.swift in Sources */,
+				D07D11702BDC0BD6007F32C1 /* UploadPostViewModel.swift in Sources */,
 				D07D116C2BDBF411007F32C1 /* ProfileHeaderView.swift in Sources */,
 				D032E34E2BD801EB00C957E3 /* CompleteSignUpView.swift in Sources */,
 				D032E3502BD8046500C957E3 /* User.swift in Sources */,
