@@ -339,8 +339,8 @@
 		D0FD4E772BD3D2210040DE96 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				D06336732BE94EA60086498F /* ViewModel */,
 				D06336722BE94E9C0086498F /* View */,
+				D06336732BE94EA60086498F /* ViewModel */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
